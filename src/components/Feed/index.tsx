@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Clock, User } from "phosphor-react";
 import { FeedPost } from "../../lib/api";
-import { LikeButton } from "./LikeButton";
 import { Tag } from "./Tag";
 
 type FeedProps = {
@@ -15,7 +14,7 @@ export function Feed(props: FeedProps) {
       {props.posts.map((post) => (
         <article
           key={post.slug}
-          className="bg-white border border-bg-emphasis rounded mb-6 last-of-type:mb-0"
+          className="overflow-hidden overflow-ellipsis bg-white border border-bg-emphasis rounded mb-6 last-of-type:mb-0"
         >
           <Image
             src={post.coverImage}
@@ -23,11 +22,10 @@ export function Feed(props: FeedProps) {
             width={875}
             height={340}
             className="rounded-t"
-            placeholder="blur"
             priority
           />
           <Link href={`/post/${post.slug}`}>
-            <a className="ml-6 text-read-black text-double font-bold hover:text-main-purple hover:underline">
+            <a className="inline whitespace-nowrap ml-6 text-read-black text-double font-bold hover:text-main-purple hover:underline">
               {post.title}
             </a>
           </Link>

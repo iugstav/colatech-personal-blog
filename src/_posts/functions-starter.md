@@ -1,6 +1,6 @@
 ---
 title: 'Bê-á-Bá das Funções: Conceito e Aplicações em C'
-coverImage: '/assets/functions/bg-post-1.png'
+coverImage: '/assets/functions/bg-post-functions.png'
 tag: 'Ciência da Computação'
 date: '26/09/2022'
 author:
