@@ -77,7 +77,7 @@ Pronto! Bom, Fulaninho não ficou muito feliz com a nota, mas isso não é mais 
 
 A imagem abaixo mostra a representação do array `notas` sendo armazenado contiguamente na memória.
 
-![aula-panelinha-vec.svg](array/memory-representation.svg)
+![aula-panelinha-vec.svg](/assets/array/memory-representation.svg)
 
 ## Vetores em C: Vetores como Parâmetros
 
