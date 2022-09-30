@@ -35,9 +35,11 @@ export default function Post({ data, content }) {
               {data.tag}
             </p>
 
-            <p className="3sm:text-base 2sm:text-lg md:text-sm max-lg:text-2xl font-bold text-double mb-8">
-              {data.title}
-            </p>
+            <div className="w-[92%]">
+              <p className="3sm:text-base 2sm:text-lg md:text-sm max-lg:text-2xl text-center font-bold text-double mb-8">
+                {data.title}
+              </p>
+            </div>
 
             <PostInfo
               authorName={data.author.name}

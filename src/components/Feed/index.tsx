@@ -26,7 +26,7 @@ export function Feed(props: FeedProps) {
             priority
           />
           <Link href={`/post/${post.slug}`}>
-            <a className="2sm:text-xl md:text-[1.5rem] whitespace-nowrap ml-6 text-read-black text-double font-bold hover:text-main-purple hover:underline">
+            <a className="2sm:text-xl 2sm:ml-3 md:text-[1.5rem] whitespace-nowrap ml-6 text-read-black text-double font-bold hover:text-main-purple hover:underline">
               {post.title}
             </a>
           </Link>
