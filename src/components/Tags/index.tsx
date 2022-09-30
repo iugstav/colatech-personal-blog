@@ -7,7 +7,7 @@ type TagsProps = {
 
 export function Tags(props: TagsProps) {
   return (
-    <div className="w-full bg-white border border-bg-emphasis rounded pl-3">
+    <div className="w-full bg-white border border-bg-emphasis rounded pl-3 max-xl:hidden">
       <h3 className="text-lg font-semibold text-soft-black mt-2 mb-4">Tags</h3>
       <ul className="mb-3">
         {props.tags.map((tag) => (

@@ -12,6 +12,19 @@ module.exports = {
         }
       }),
 
+      screens: {
+        'max-lg': {"max": '920px'},
+        'max-xl': { "max": '1220px' },
+        'semi-xl': { "max": '1000px' },
+        'xl': '1221px',
+        'lg': "921px",
+        'md': { "max": '680px' },
+        'bigger-md': "681px",
+        '2sm': { "max": '460px' },
+        '3sm': { "max": '400px' },
+        'smallest': '300px'
+      },
+
       colors: {
         'soft-blue': '#DBF2FF',
         'bg-emphasis': "#B9D1DF",

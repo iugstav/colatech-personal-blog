@@ -10,7 +10,7 @@ export default function Post({ data, content }) {
   return (
     <>
       <Layout title={data.title}>
-        <main className="w-[875px] mx-auto mt-7 mb-16">
+        <main className="semi-xl:max-w-[95vw] w-[875px] mx-auto mt-7 mb-16">
           <div className="font-sans-ui ml-2 mb-2">
             <button className="w-16 h-8 rounded bg-white text-main-purple font-normal text-lg mr-4">
               Post
@@ -22,7 +22,7 @@ export default function Post({ data, content }) {
             Discussões
           </button> */}
           </div>
-          <article className=" bg-white rounded border border-bg-emphasis flex flex-col items-center font-sans-body text-read-black text-lg">
+          <article className="bg-white rounded border border-bg-emphasis flex flex-col items-center font-sans-body text-read-black text-lg">
             <Image
               src={data.coverImage}
               width={875}
@@ -31,9 +31,13 @@ export default function Post({ data, content }) {
               priority
             />
 
-            <p className="my-4 text-base font-semibold">{data.tag}</p>
+            <p className="3sm:text-sm my-4 text-base font-semibold">
+              {data.tag}
+            </p>
 
-            <p className="font-bold text-double mb-8">{data.title}</p>
+            <p className="3sm:text-base 2sm:text-xl md:text-[1.5rem] font-bold text-double mb-8">
+              {data.title}
+            </p>
 
             <PostInfo
               authorName={data.author.name}
@@ -42,7 +46,7 @@ export default function Post({ data, content }) {
             />
 
             <div
-              className="mb-6 text-read-black prose prose-xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:font-semibold prose-main-purple hover:prose-a:brightness-200"
+              className="mb-6 text-read-black smallest:prose-main-purple smallest:prose-a:font-semibold prose 3sm:prose-h2:text-lg 2sm:prose-p:text-sm 2sm:prose-sm md:px-4 md:prose md:prose-p:text-base prose-xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:font-semibold prose-main-purple hover:prose-a:brightness-200"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
           </article>

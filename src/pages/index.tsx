@@ -18,7 +18,7 @@ export default function Index({ posts, tags }: IndexPageProps) {
   return (
     <>
       <Layout title="ColaTech | Página principal">
-        <main className="max-w-[1170px] mx-auto mb-20 mt-7 grid grid-cols-main gap-x-6">
+        <main className=" semi-xl:max-w-[95vw] max-xl:w-[875px] w-[1170px] mx-auto mb-20 mt-7 xl:grid xl:grid-cols-main xl:gap-x-6">
           <aside className="font-sans-ui">
             {/* <LogInAdvice /> */}
             <Tags tags={tags} />

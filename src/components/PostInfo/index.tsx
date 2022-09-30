@@ -17,8 +17,8 @@ export function PostInfo(props: PostInfoProps) {
         alt="Imagem do Autor"
       />
       <div>
-        <p className="text-base font-bold">{props.authorName}</p>
-        <p className="text-sm font-regular">{props.date}</p>
+        <p className="2sm:text-sm text-base font-bold">{props.authorName}</p>
+        <p className="2sm:text-xs font-regular">{props.date}</p>
       </div>
     </div>
   );

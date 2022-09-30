@@ -19,15 +19,9 @@ export function SearchBar() {
     }
   }
 
-  // useEffect(() => {
-  //   if (document.hasFocus() && ref) {
-  //     setIsFocused(true);
-  //   }
-  // });
-
   return (
     <form
-      className={`mx-auto     w-[440px] h-10 bg-white border border-custom-gray rounded flex ${
+      className={`md:w-min md:ml-4 w-[440px] h-10 bg-white border border-custom-gray rounded flex mx-auto ${
         isFocused ? "border-normal-gray" : ""
       } transition-colors duration-75`}
       onSubmit={handleSubmitSearch}
@@ -35,7 +29,7 @@ export function SearchBar() {
       <input
         type="text"
         placeholder="Pesquisa..."
-        className="flex-1 bg-transparent px-2 outline-none"
+        className="md:hidden flex-1 bg-transparent px-2 outline-none"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
         onFocus={() => setIsFocused(true)}

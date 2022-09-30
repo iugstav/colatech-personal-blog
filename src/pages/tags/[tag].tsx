@@ -6,8 +6,8 @@ import { getPostsByTag, getTags } from "../../lib/api";
 export default function CategoryPage({ posts, tag }) {
   return (
     <Layout title="ColaTech | Tags">
-      <main className="w-[875px] mx-auto mt-7 mb-16">
-        <p className="mb-7 font-sans-body font-semibold text-double text-read-black">
+      <main className="semi-xl:max-w-[95vw] w-[875px] mx-auto mt-7 mb-16">
+        <p className="2sm:text-xl md:text-2xl mb-7 font-sans-body font-semibold text-double text-read-black">
           Tag: {tag}
         </p>
 
