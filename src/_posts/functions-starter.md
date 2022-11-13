@@ -19,7 +19,7 @@ A ideia de função na programação remete um pouco ao conceito de funções na
 
 ## Funções na linguagem C
 
-Dada essa introdução sobre funções, vamos entender como elas são aplicadas na prática. Para isso foi escolhida a [linguagem C](https://blog.betrybe.com/linguagem-de-programacao/linguagem-c/). **
+Dada essa introdução sobre funções, vamos entender como elas são aplicadas na prática. Para isso foi escolhida a [linguagem C](https://blog.betrybe.com/linguagem-de-programacao/linguagem-c/).
 
 Você já deve ter visto algumas funções providas pela linguagem como `printf()`, `scanf()` e várias outras, mas além das predefinidas podemos definir as nossas próprias funções com a sintaxe abaixo:
 

@@ -20,7 +20,7 @@ Na linguagem C, vetores são chamados de **arrays** e possuem tamanho fixo. Arra
 <tipo> nome_do_vetor[tamanho];
 ```
 
-Quando você não inicializa um vetor cujo tipo é um número (`int`, `float`, etc.),  todas as posições dele são ocupadas pelo valor 0, pois quando você cria a variável `nome_do_vetor`, seu programa já se prepara e reserva esses $n$ espaços para receber seu vetor. Para inicializar um vetor, atribua a ele um par de chaves com a ordem dos valores que você quiser e os valores que você quiser, contanto que atinja o tamanho proposto.
+Quando você não inicializa um vetor cujo tipo é um número (`int`, `float`, etc.),  todas as posições dele são ocupadas pelo valor 0, pois quando você cria a variável `nome_do_vetor`, seu programa já se prepara e reserva esses `n` espaços para receber seu vetor. Para inicializar um vetor, atribua a ele um par de chaves com a ordem dos valores que você quiser e os valores que você quiser, contanto que atinja o tamanho proposto.
 
 ```c
 // array de 4 floats inicializado
