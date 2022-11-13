@@ -48,7 +48,7 @@ export default function Post({ data, content }) {
             />
 
             <div
-              className="mb-6 w-[92%] text-read-black smallest:prose-main-purple smallest:prose-a:font-semibold 3sm:prose-h2:text-lg 3sm:prose-p:text-sm 2sm:prose-sm md:px-4 md:prose md:prose-p:text-base prose prose-xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:font-semibold prose-main-purple hover:prose-a:brightness-200"
+              className="mb-6 w-[92%] text-read-black smallest:prose-main-purple smallest:prose-a:font-semibold 3sm:prose-h2:text-lg 3sm:prose-p:text-xs 2sm:prose-sm 2sm:prose-p:text-sm md:px-4 md:prose md:prose-p:text-base md:prose-pre:text-lg prose prose-xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-lg prose-a:font-semibold prose-main-purple hover:prose-a:brightness-200"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
           </article>

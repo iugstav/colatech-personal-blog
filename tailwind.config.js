@@ -29,11 +29,6 @@ module.exports = {
             "pre code": {
               padding: "1rem 1.25rem" 
             },
-
-            "pre .hljs": {
-              borderRadius: "0.5rem"
-            }
-
           }
         },
       }),
