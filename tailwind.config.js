@@ -1,15 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/components/**/*.tsx', './src/pages/**/*.tsx'],
+  safelist: [{
+    pattern: /hljs+/,
+  }],
   theme: {
+    hljs: {
+      theme: 'night-owl',
+    },
     extend: {
       typography: ({ theme }) => ({
         'main-purple': {
           css: {
             '--tw-prose-links': theme('colors.main-purple'),
-            '--tw-prose-code': theme('colors.main-purple')
+            '--tw-prose-code': theme('colors.main-purple'),
+
+            'code::before': {
+              content: '""'
+            },
+            'code::after': {
+              content: '""'
+            },
+
+            "pre": {
+              padding: "0"
+            },
+
+            "pre code": {
+              padding: "1rem 1.25rem" 
+            },
+
+            "pre .hljs": {
+              borderRadius: "0.5rem"
+            }
+
           }
-        }
+        },
       }),
 
       screens: {
@@ -64,6 +90,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/typography")
+    require("@tailwindcss/typography"),
+    require('tailwind-highlightjs')
   ],
 }

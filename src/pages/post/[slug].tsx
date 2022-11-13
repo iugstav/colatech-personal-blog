@@ -67,6 +67,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       data: post.data,
       content: content,
     },
+    revalidate: 60 * 60 * 8, // 8 hours
   };
 };
 
@@ -81,6 +82,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
         },
       };
     }),
-    fallback: false,
+    fallback: "blocking",
   };
 };
