@@ -2,7 +2,7 @@
 title: 'Bê-á-Bá das Funções: Conceito e Aplicações em C'
 coverImage: '/assets/functions/bg-post-functions.png'
 tag: 'Ciência da Computação'
-date: '26/09/2022'
+date: '09/26/2022'
 author:
   - name: 'Gustavo Soares'
   - image: '/assets/perfil-github-1.png'
@@ -50,8 +50,7 @@ int calcula_soma() {
 ```
 
 <aside>
-⚠️ ***ATENÇÃO**:* Você deve ter em mente que o `return` deve ser a última coisa do seu código, pois nada após ele será lido. É como se estivéssemos falando: “A sessão de processamento terminou, agora retorne esse valor”. Então muito cuidado com o lugar do seu retorno.
-
+⚠️ <strong><i>ATENÇÃO:</i></strong> Você deve ter em mente que o `return` deve ser a última coisa do seu código, pois nada após ele será lido. É como se estivéssemos falando: “A sessão de processamento terminou, agora retorne esse valor”. Então muito cuidado com o lugar do seu retorno.
 </aside>
 
 Aqui, vemos uma função `calcula_soma()` com tipo de retorno `int` que calcula 2 + 2 e retorna esse inteiro. Agora, se eu quiser executar esse bloco de código no meu código principal, é só invocar o nome da função `calcula_soma()`.

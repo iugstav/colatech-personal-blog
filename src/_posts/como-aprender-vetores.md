@@ -2,7 +2,7 @@
 title: 'Como Começar a Aprender Vetores?'
 coverImage: '/assets/array/bg-array-post.png'
 tag: 'Ciência da Computação'
-date: "28/09/2022"
+date: "09/28/2022"
 author:
   - name: 'Gustavo Soares'
   - image: '/assets/perfil-github-1.png'

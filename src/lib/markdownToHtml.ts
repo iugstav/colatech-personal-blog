@@ -5,11 +5,13 @@ import rehypeStringify from "rehype-stringify";
 import rehypeFormat from "rehype-format";
 import rehypeDocument from "rehype-document";
 import remarkRehype from "remark-rehype";
+import rehypeRaw from "rehype-raw";
 
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(parse)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
     .use(rehypeHighlight)
     .use(rehypeDocument)
     .use(rehypeFormat)

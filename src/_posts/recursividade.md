@@ -2,7 +2,7 @@
 title: 'A Repetição das Funções Recursivas em Minutos'
 coverImage: '/assets/recursive/bg-post-recursivity.png'
 tag: 'Ciência da Computação'
-date: '30/09/2022'
+date: '09/30/2022'
 author:
   - name: 'Gustavo Soares'
   - image: '/assets/perfil-github-1.png'
