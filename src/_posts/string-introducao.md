@@ -14,7 +14,7 @@ Recomendo a leitura de [Como Começar a Aprender Vetores?](https://colatech.verc
 
 Na teoria, strings seriam como frases; elas representam uma sequência de caracteres presentes em um alfabeto. Mas afinal, o que é um alfabeto? Quero ver responder essa!
 
-Entenda alfabeto como um conjunto finito ou infinito de caracteres que podem conter os mais variados elementos. Uma palavra desse alfabeto pode ser qualquer sequência finita de elementos  $x$ de modo que $x$ esteja presente no alfabeto. Dito isso voltemos ao contexto de computação, que é o que nos interessa.
+Entenda alfabeto como um conjunto finito ou infinito de caracteres que podem conter os mais variados elementos. Uma palavra desse alfabeto pode ser qualquer sequência finita de elementos $X$ de modo que $X$ esteja presente no alfabeto. Dito isso voltemos ao contexto de computação, que é o que nos interessa.
 
 No universo da programação temos tipos primitivos que dão forma aos dados do nosso programa e um deles é o tipo char. Esse tipo representa um único caractere de um determinado conjunto de elementos, seja esse ASCII, Unicode ou qualquer outro. Strings são nada mais que cadeias de caracteres `char` com um delimitador no final, que representa o fim de uma string. Usemos a linguagem C para demonstrar os conceitos acima:
 
@@ -73,7 +73,7 @@ int main()
 A função `strcmp` compara duas strings caractere por caractere e nos retorna verdadeiro se forem iguais e falso se forem diferentes. Como C não possui tipo booleano, a função retorna 0 e 1, respectivamente.
 
 <aside>
-⚠️ ***ATENÇÃO***: strings escritas char por char como na variável `nome` devem **SEMPRE** usar aspas simples como identificação de caractere único.
+⚠️ <strong><i>ATENÇÃO:</i></strong> strings escritas char por char como na variável <code>nome</code> devem <strong>SEMPRE</strong> usar aspas simples como identificação de caractere único.
 
 </aside>
 
