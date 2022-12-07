@@ -187,13 +187,13 @@ O código apresenta um caso de recursão direta, o qual determina que enquanto `
 
 A cada chamada que não atinge a condição de término, empilhamos uma chamada mais simples na pilha. Quando a condição de término é atingida, as funções são executadas uma por uma, da última empilhada até a primeira, até que não haja mais função a ser executada.
 
-Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [*stack](https://blog.pantuza.com/artigos/heap-vs-stack)*  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
+## Conclusão
 
-## Recursão vs Iteração: Uma Simples Tabela
+Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [*stack*](https://blog.pantuza.com/artigos/heap-vs-stack)  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
 
-| Situações | Recursão | Iteração |
-| --- | --- | --- |
-| Término | Termina quando o caso mais básico é atingido | Termina quando a condição se torna falsa |
-| Casos de uso | Usado com funções | Usado em loops |
-| Desempenho | Processos mais pesados, pois sempre precisa alocar memória para uma nova chamada | As iterações não consomem espaço a mais |
-| Legibilidade | Menos código escrito e mais legibilidade | Maior número de linhas e menor legibilidade |
+Alguns pontos a serem ressaltados ao comparar as duas situações são:
+
+- Iterações terminam quando uma condição se torna falha. As recursões, quando se chega no caso mais básico;
+- Iterações não alocam espaços extras na stack;
+- Recursões fornecem maior legibilidade ao código. Uma vez que se compreende o processo, fica fácil proceder;
+  
