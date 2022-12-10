@@ -14,7 +14,11 @@ export default async function markdownToHtml(markdown: string) {
     .use(parse)
     .use(remarkMath)
     .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeKatex, { output: "mathml" })
+    .use(rehypeKatex, {
+      output: "mathml",
+      colorIsTextColor: true,
+      throwOnError: true,
+    })
     .use(rehypeRaw)
     .use(rehypeHighlight)
     .use(rehypeDocument)

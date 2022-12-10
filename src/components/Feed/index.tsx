@@ -46,7 +46,7 @@ export function Feed(props: FeedProps) {
               </span>
             </div>
 
-            <p className="2sm:hidden md:text-base text-lg text-read-black font-regular ml-6 mb-4">
+            <p className="2sm:hidden md:text-base w-[95%] text-lg text-read-black font-regular ml-6 mb-4">
               {post.intro}
             </p>
 
