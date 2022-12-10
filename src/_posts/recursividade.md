@@ -17,22 +17,22 @@ A recursão se aplica diretamente a funções, pois é o único bloco de process
 
 ## A Visão Matemática da Coisa
 
-Consideremos que você, pessoa programadora, tem que determinar a soma dos $n$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $n$, parecendo com isso:
+Consideremos que você, pessoa programadora, tem que determinar a soma dos $\relax{n}$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $\relax{n}$, parecendo com isso:
 
 $$
-f(n)=1+2+3+4+...+n
+\operatorname{f}\lparen\relax{n}\rparen = 1+2+3+4+...+n
 $$
 
-Imagina se $n$ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
+Imagina se $\relax{n}$ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
 
 $$
-f()=\begin{cases}
-   f(n)=1 &\text{ se } n=1 \\
-   n + f(n-1) &\text{ se } n>1
+\operatorname{f}\lparen\relax{n}\rparen=\begin{cases}
+   \operatorname{f}\lparen\relax{n}\rparen=1 &\text{ se } n=1 \\
+   n + \operatorname{f}\lparen\relax{n-1}\rparen &\text{ se } n>1
 \end{cases}
 $$
 
-A única diferença entre os dois métodos é que a função $f()$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
+A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
 
 ## Recursividade na Prática
 
