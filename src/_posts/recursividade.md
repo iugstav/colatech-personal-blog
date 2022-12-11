@@ -15,20 +15,24 @@ De forma rasa e informal, a recursão na programação pode ser considerada como
 
 A recursão se aplica diretamente a funções, pois é o único bloco de processamento que pode chamar a si mesmo durante sua execução. Uma função recursiva em sua integridade aplica um algoritmo de [Divisão e Conquista](https://pt.wikipedia.org/wiki/Divis%C3%A3o_e_conquista), que consiste em dividir de forma recursiva um problema grande em problemas menores até que o problema seja resolvido. Ou seja, a função sempre vai retornar ela mesma com uma versão mais simples do problema até chegar na solução.
 
-## A Visão Matemática da Coisa
+<!-- ## A Visão Matemática da Coisa
 
-Consideremos que você, pessoa programadora, tem que determinar a soma dos <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\relax{n}</annotation></semantics></math> primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\relax{n}</annotation></semantics></math>, parecendo com isso:
+Consideremos que você, pessoa programadora, tem que determinar a soma dos $\relax{n}$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $\relax{n}$, parecendo com isso:
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">f(n) = 1+2+3+4+...+n</annotation></semantics></math>
+$$
+\operatorname{f}\lparen\relax{n}\rparen = 1+2+3+4+...+n
+$$
 
-Imagina se <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">\relax{n}</annotation></semantics></math> for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
+Imagina se $\relax{n}$ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>&nbsp;se&nbsp;</mtext><mi>n</mi><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>&nbsp;se&nbsp;</mtext><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(n)=\begin{cases}
-   f(n)=1 &amp;\text{ se } n=1 \\
-   n + f(n-1) &amp;\text{ se } n&gt;1
-\end{cases}</annotation></semantics></math>
+$$
+\operatorname{f}\lparen\relax{n}\rparen=\begin{cases}
+   \operatorname{f}\lparen\relax{n}\rparen=1 &\text{ se } n=1 \\
+   n + \operatorname{f}\lparen\relax{n-1}\rparen &\text{ se } n>1
+\end{cases}
+$$
 
-A única diferença entre os dois métodos é que a função <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(n)</annotation></semantics></math> está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
+A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão. -->
 
 ## Recursividade na Prática
 
