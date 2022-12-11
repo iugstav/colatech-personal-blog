@@ -12,6 +12,13 @@ import remarkMath from "remark-math";
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(parse)
+    .use(rehypeDocument)
+    .use(rehypeHighlight)
+    .use(rehypeFormat)
+    .use(rehypeStringify, {
+      allowDangerousHtml: true,
+      allowDangerousCharacters: true,
+    })
     .use(remarkMath)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(remarkMath, { singleDollarTextMath: true })
@@ -21,10 +28,6 @@ export default async function markdownToHtml(markdown: string) {
       throwOnError: true,
     })
     .use(rehypeRaw)
-    .use(rehypeHighlight)
-    .use(rehypeDocument)
-    .use(rehypeFormat)
-    .use(rehypeStringify)
     .process(markdown);
   return result.toString();
 }
