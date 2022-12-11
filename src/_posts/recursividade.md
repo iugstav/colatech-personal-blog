@@ -15,7 +15,7 @@ De forma rasa e informal, a recursão na programação pode ser considerada como
 
 A recursão se aplica diretamente a funções, pois é o único bloco de processamento que pode chamar a si mesmo durante sua execução. Uma função recursiva em sua integridade aplica um algoritmo de [Divisão e Conquista](https://pt.wikipedia.org/wiki/Divis%C3%A3o_e_conquista), que consiste em dividir de forma recursiva um problema grande em problemas menores até que o problema seja resolvido. Ou seja, a função sempre vai retornar ela mesma com uma versão mais simples do problema até chegar na solução.
 
-<!-- ## A Visão Matemática da Coisa
+## A Visão Matemática da Coisa
 
 Consideremos que você, pessoa programadora, tem que determinar a soma dos $\relax{n}$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $\relax{n}$, parecendo com isso:
 
@@ -32,7 +32,7 @@ $$
 \end{cases}
 $$
 
-A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão. -->
+A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
 
 ## Recursividade na Prática
 

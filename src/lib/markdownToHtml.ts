@@ -14,6 +14,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(parse)
     .use(remarkMath)
     .use(remarkRehype, { allowDangerousHtml: true })
+    .use(remarkMath, { singleDollarTextMath: true })
     .use(rehypeKatex, {
       output: "mathml",
       colorIsTextColor: true,
