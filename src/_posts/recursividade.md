@@ -15,24 +15,24 @@ De forma rasa e informal, a recursão na programação pode ser considerada como
 
 A recursão se aplica diretamente a funções, pois é o único bloco de processamento que pode chamar a si mesmo durante sua execução. Uma função recursiva em sua integridade aplica um algoritmo de [Divisão e Conquista](https://pt.wikipedia.org/wiki/Divis%C3%A3o_e_conquista), que consiste em dividir de forma recursiva um problema grande em problemas menores até que o problema seja resolvido. Ou seja, a função sempre vai retornar ela mesma com uma versão mais simples do problema até chegar na solução.
 
-<!-- ## A Visão Matemática da Coisa
+## A Visão Matemática da Coisa
 
-Consideremos que você, pessoa programadora, tem que determinar a soma dos $\relax{n}$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $\relax{n}$, parecendo com isso:
-
-$$
-\operatorname{f}\lparen\relax{n}\rparen = 1+2+3+4+...+n
-$$
-
-Imagina se $\relax{n}$ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
+Consideremos que você, pessoa programadora, tem que determinar a soma dos __n__ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até __n__, parecendo com isso:
 
 $$
-\operatorname{f}\lparen\relax{n}\rparen=\begin{cases}
-   \operatorname{f}\lparen\relax{n}\rparen=1 &\text{ se } n=1 \\
-   n + \operatorname{f}\lparen\relax{n-1}\rparen &\text{ se } n>1
+f(n) = 1+2+3+4+...+n
+$$
+
+Imagina se __n__ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
+
+$$
+f(n)=\begin{cases}
+   f()=1 &\text{ se } n=1 \\
+   n + f(n-1) &\text{ se } n>1
 \end{cases}
 $$
 
-A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão. -->
+A única diferença entre os dois métodos é que a função __f()__ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
 
 ## Recursividade na Prática
 
@@ -109,8 +109,8 @@ Entendemos como a recursão funciona, agora entenderemos onde cada tipo de recur
 
 Como mencionado anteriormente, a recursividade pode aparecer direta ou indiretamente:
 
-- **Forma direta**: É formada pela mesma estrutura de comandos e uma chamada a si mesma durante seu bloco de execução.
-- **Forma indireta**: Nesse caso podem existir  $n$  funções e todas dependem de todas, gerando uma cadeia de dependências até que a condição de término seja atingida. Veja o exemplo abaixo:
+- __Forma direta__: É formada pela mesma estrutura de comandos e uma chamada a si mesma durante seu bloco de execução.
+- __Forma indireta__: Nesse caso podem existir  $n$  funções e todas dependem de todas, gerando uma cadeia de dependências até que a condição de término seja atingida. Veja o exemplo abaixo:
 
 ```c
 #include <stdio.h>
@@ -189,7 +189,7 @@ A cada chamada que não atinge a condição de término, empilhamos uma chamada 
 
 ## Conclusão
 
-Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [*stack*](https://blog.pantuza.com/artigos/heap-vs-stack)  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
+Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [_stack_](https://blog.pantuza.com/artigos/heap-vs-stack)  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
 
 Alguns pontos a serem ressaltados ao comparar as duas situações são:
 

@@ -9,25 +9,39 @@ import rehypeRaw from "rehype-raw";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
+import { marked } from "marked";
+import h from "highlight.js";
+import markedKatex from "marked-katex-extension";
+import katex from "katex";
+
+type something = any;
+
 export default async function markdownToHtml(markdown: string) {
-  const result = await unified()
-    .use(parse)
-    .use(rehypeDocument)
-    .use(rehypeHighlight)
-    .use(rehypeFormat)
-    .use(rehypeStringify, {
-      allowDangerousHtml: true,
-      allowDangerousCharacters: true,
-    })
-    .use(remarkMath)
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(remarkMath, { singleDollarTextMath: true })
-    .use(rehypeKatex, {
+  marked.use(
+    markedKatex({
+      displayMode: (type: string) => type == "block",
       output: "mathml",
-      colorIsTextColor: true,
       throwOnError: true,
+      trust: true,
     })
-    .use(rehypeRaw)
-    .process(markdown);
-  return result.toString();
+  );
+
+  marked.setOptions({
+    renderer: new marked.Renderer(),
+    highlight: function (code, lang) {
+      const language = h.getLanguage(lang) ? lang : "plaintext";
+      return h.highlight(code, { language }).value;
+    },
+    langPrefix: "hljs language-", // highlight.js css expects a top-level 'hljs' class.
+    pedantic: false,
+    gfm: true,
+    breaks: true,
+    sanitize: false,
+    smartypants: false,
+    xhtml: false,
+  });
+
+  const result = marked.parse(markdown);
+
+  return result;
 }

@@ -23,12 +23,9 @@ module.exports = {
             },
 
             "pre": {
-              padding: "0"
+              padding: 0,
             },
 
-            "pre code": {
-              padding: "1rem 1.25rem" 
-            },
           }
         },
       }),
