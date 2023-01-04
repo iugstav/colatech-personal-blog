@@ -15,15 +15,15 @@ De forma rasa e informal, a recursão na programação pode ser considerada como
 
 A recursão se aplica diretamente a funções, pois é o único bloco de processamento que pode chamar a si mesmo durante sua execução. Uma função recursiva em sua integridade aplica um algoritmo de [Divisão e Conquista](https://pt.wikipedia.org/wiki/Divis%C3%A3o_e_conquista), que consiste em dividir de forma recursiva um problema grande em problemas menores até que o problema seja resolvido. Ou seja, a função sempre vai retornar ela mesma com uma versão mais simples do problema até chegar na solução.
 
-<!-- ## A Visão Matemática da Coisa
+## A Visão Matemática da Coisa
 
-Consideremos que você, pessoa programadora, tem que determinar a soma dos $\relax{n}$ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até $\relax{n}$, parecendo com isso:
+Consideremos que você, pessoa programadora, tem que determinar a soma dos _n_ primeiros números naturais. Existem diversas maneiras de fazer isso, mas a mais simples é sair somando os números de 1 até _n_, parecendo com isso:
 
 $$
 \operatorname{f}\lparen\relax{n}\rparen = 1+2+3+4+...+n
 $$
 
-Imagina se $\relax{n}$ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
+Imagina se _n_ for um número na casa dos milhares. Bastante trabalhoso, né? Nesse caso temos a opção recursiva para resolver esse problema. Veja a seguir:
 
 $$
 \operatorname{f}\lparen\relax{n}\rparen=\begin{cases}
@@ -32,7 +32,7 @@ $$
 \end{cases}
 $$
 
-A única diferença entre os dois métodos é que a função $\operatorname{f}\lparen\relax{n}\rparen$ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão. -->
+A única diferença entre os dois métodos é que a função _f(n)_ está sendo chamada dentro de sua própria função, estabelecendo uma condição de recursão.
 
 ## Recursividade na Prática
 
@@ -81,7 +81,7 @@ Onde a variável local `contagem` representa de onde a contagem deve começar.
 
 No exemplo recursivo vimos que o retorno `sequencia_decolar(contagem - 1)` é o mesmo problema, porém simplificado, o que caminha para uma pilha de funções onde a anterior, mais complexa, não será resolvida até que a próxima, mais simples, seja. Por exemplo, se a variável `contagem` for 5, teremos esse comportamento:
 
-```markdown
+```text
 ## Invocação da função sequencia_decolar(5);
 
 5 é igual a 0? Não.
@@ -110,7 +110,7 @@ Entendemos como a recursão funciona, agora entenderemos onde cada tipo de recur
 Como mencionado anteriormente, a recursividade pode aparecer direta ou indiretamente:
 
 - **Forma direta**: É formada pela mesma estrutura de comandos e uma chamada a si mesma durante seu bloco de execução.
-- **Forma indireta**: Nesse caso podem existir  $n$  funções e todas dependem de todas, gerando uma cadeia de dependências até que a condição de término seja atingida. Veja o exemplo abaixo:
+- **Forma indireta**: Nesse caso podem existir  **n**  funções e todas dependem de todas, gerando uma cadeia de dependências até que a condição de término seja atingida. Veja o exemplo abaixo:
 
 ```c
 #include <stdio.h>
@@ -189,7 +189,7 @@ A cada chamada que não atinge a condição de término, empilhamos uma chamada 
 
 ## Conclusão
 
-Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [*stack*](https://blog.pantuza.com/artigos/heap-vs-stack)  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
+Quando comparadas com laços de iteração, funções recursivas consomem mais memória que laços, visto que cada chamada à função consome mais memória na [_stack_](https://blog.pantuza.com/artigos/heap-vs-stack)  e um loop não requer espaço extra. Dito isso, pense bem antes de aplicar recursividade no seu projeto, principalmente se desempenho for um fator crucial.
 
 Alguns pontos a serem ressaltados ao comparar as duas situações são:
 

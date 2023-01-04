@@ -14,9 +14,9 @@ Recomendo a leitura de [Como Começar a Aprender Vetores?](https://colatech.verc
 
 Na teoria, strings seriam como frases; elas representam uma sequência de caracteres presentes em um alfabeto. Mas afinal, o que é um alfabeto? Quero ver responder essa!
 
-Entenda alfabeto como um conjunto finito ou infinito de caracteres que podem conter os mais variados elementos. Uma palavra desse alfabeto pode ser qualquer sequência finita de elementos $X$ de modo que $X$ esteja presente no alfabeto. Dito isso voltemos ao contexto de computação, que é o que nos interessa.
+Entenda alfabeto como um conjunto finito ou infinito de caracteres que podem conter os mais variados elementos. Uma palavra desse alfabeto pode ser qualquer sequência finita de elementos **X** de modo que **X** esteja presente no alfabeto. Dito isso voltemos ao contexto de computação, que é o que nos interessa.
 
-No universo da programação temos tipos primitivos que dão forma aos dados do nosso programa e um deles é o tipo char. Esse tipo representa um único caractere de um determinado conjunto de elementos, seja esse ASCII, Unicode ou qualquer outro. Strings são nada mais que cadeias de caracteres `char` com um delimitador no final, que representa o fim de uma string. Usemos a linguagem C para demonstrar os conceitos acima:
+No universo da programação temos tipos primitivos que dão forma aos dados do nosso programa e um deles é o tipo `char`. Esse tipo representa um único caractere de um determinado conjunto de elementos, seja esse ASCII, Unicode ou qualquer outro. Strings são nada mais que cadeias de caracteres `char` com um delimitador no final, que representa o fim de uma string. Usemos a linguagem C para demonstrar os conceitos acima:
 
 ```c
 // Criação de um char letra que representa o caractere "a"
